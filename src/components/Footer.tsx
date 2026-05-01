@@ -1,6 +1,8 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import Logo from './Logo';
+
 export default function Footer() {
   return (
     <footer className="bg-zinc-950 text-zinc-400 py-16 border-t border-white/5">
@@ -8,7 +10,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
             <Link to="/" className="block mb-6">
-              <span className="text-2xl font-display font-bold text-white tracking-tighter">GOLAM</span>
+              <Logo className="h-10 opacity-80 hover:opacity-100 transition-opacity" />
             </Link>
             <p className="text-sm leading-relaxed mb-8">
               Líderes en soluciones de fachadas y revestimientos de aluminio compuesto en Argentina. Calidad, seriedad y experiencia que respaldan cada proyecto.

@@ -8,33 +8,27 @@ interface LogoProps {
 }
 
 export default function Logo({ variant = 'dark', className = '' }: LogoProps) {
-  const isLight = variant === 'light';
-  
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      <div className={`relative h-[50px] sm:h-[60px] w-[100px] sm:w-[116px] px-2 flex items-center justify-center group rounded-xl sm:rounded-2xl border transition-all duration-300 ${
-        isLight 
-          ? 'bg-white/10 border-white/20' 
-          : 'bg-zinc-100 border-zinc-200'
-      }`}>
+    <div className={`flex items-center ${className}`}>
+      <div className="relative h-[50px] sm:h-[60px] flex items-center justify-start min-w-[120px]">
         <img 
           src="https://lh3.googleusercontent.com/sitesv/AA5AbUCyKu8e7uja0_hky0gXSoasPGZVq-ZSfiyBC5FpZUkUbxgoM9fO9cn5KCXwKrgT1FWlKKxKERoBC6ryhfoFVT2FcgPQe29EFLb2C6eywgJO-g973cDdkpKjpjk18fk7-t25lWbmKsIhIMZAdo3vC0lyKahXcYWV72EKu0jflzn7C_OZx_xYsOlMmMzwbF_l62qUp9y8y6RCvJ2nbw5AB2TJjhfnr8I3CKvRgGI=w1280" 
-          alt="Golam Logo" 
-          className="h-full w-full object-contain transition-all duration-300 relative z-20 rounded-xl"
+          alt="Golam" 
+          className="h-full w-auto object-contain block opacity-100 transition-opacity"
           referrerPolicy="no-referrer"
+          onLoad={(e) => {
+            (e.currentTarget as HTMLImageElement).classList.add('opacity-100');
+          }}
           onError={(e) => {
             const target = e.target as HTMLImageElement;
-            target.classList.add('hidden');
-            const fallback = target.parentElement?.querySelector('.logo-fallback') as HTMLElement;
+            target.style.display = 'none';
+            const fallback = target.parentElement?.querySelector('.logo-text');
             if (fallback) fallback.classList.remove('hidden');
           }}
         />
-        {/* Simple Fallback */}
-        <div className="logo-fallback hidden">
-          <span className={`font-display font-bold text-lg tracking-tighter ${isLight ? 'text-white' : 'text-blue-900'}`}>
-            GOLAM
-          </span>
-        </div>
+        <span className="logo-text hidden font-display font-black text-2xl tracking-tighter text-blue-600 whitespace-nowrap">
+          GOLAM
+        </span>
       </div>
     </div>
   );

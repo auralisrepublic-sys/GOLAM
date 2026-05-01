@@ -3,12 +3,6 @@ import { ExternalLink, Trophy } from 'lucide-react';
 
 const standoutProjects = [
   {
-    title: 'Aeropuertos Argentina 2000',
-    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUBhCwrz4mMVVwE4KrL4c2hplGWZUDk_J4AYxHRokR7Zb4Rz4dzwWfRujfxIFlJSTyr9lKW95szYsoleT7VouNtQrEtE9iplbQFWiAce47ZJ0nrZIolZR9TEdi3yJt1aO2FlJBw5gbF5j6wlQAR8R8bFH1ZEzc4-0Sv872YRw_A2FY7wR_Pax4pMymdQhA268Ch-JCEzoTeyIdQNEH-s8Keq8qXe8K2MoEIE=w1280',
-    details: 'Aeroparque Jorge Newbery. Revestimiento de aluminio compuesto, cielorrasos y mangas de embarque (3200 m2).',
-    year: '1999/2000'
-  },
-  {
     title: 'Hospital Fleni Escobar',
     image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUBBL6s2iuUjd3dWlGIY9ATUCxY0Y17EIGZr3QybVcpdBx4Jf7cowKrjG-Z7bD6pYxSq3xpBn0JmtKS0mrMEkxPuh5oStdXZIuweGrnOFcVtgURtd1eEOdjHhSyMiVz7mHu-LaFYal0sHODj93MonyXUY46Y6IshlHOeZP1R_3bb3sw3jpVt0kwOfy4=w1280',
     details: 'Fachadas exteriores y Marquesinas vidriadas (20.000 m2).',
@@ -27,16 +21,17 @@ const standoutProjects = [
     year: '2016'
   },
   {
-    title: 'Club Atlético River Plate',
-    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUBHedHI_Hsu1tFck2Ab-tcvHkSK8KMIgHUzPI_JKVHO_RZgNWmRu4EQvGDHrPhKc9_v0aJHuTu7Vw2k8P6Zw7EJ-BH_A3ymul-R5RucdrZUXXMlLMmadCRDvcY2NsDCePCniEaH08SySyPBzbcYoRkqkVo7llWTqbJNFTsgGTkYjkX_dPCi_siy4d2_5yZgVgXxnD_nPM4djK3ZjlnzUrDKQuNdtbF4jS6dWk4=w1280',
-    details: 'Revestimientos sobre Piel de Vidrio, Palcos y Bandera institucional.',
-    year: 'Proceso/Finalizado'
-  },
-  {
     title: 'L’Avenue (Zaha Hadid)',
     image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUDmGAOgXJ5NvLsMLTa1rWMCZzc21g2xBeYKdtE60LA1nBkqflmGcDf4aaBAanyeYhkQx-XmouVjzm-d0_F3ZIAjwmO0G3e78SAVb_Dw3AHsjCKbN2OUq9Zkwrv8Mlq00kbDsF2uAKEoncc9ueUE6Ws9BaFpRhRc6WBdO-MHwgDTF4QC9JpHIXhejSpDDN-QkhgTkoCMNyLjzMlVwGdqMCKrSSi2B0B8IGjLzWQ=w1280',
     details: 'Revestimientos sobre fachada y terminaciones de terrazas.',
     year: 'Finalizado'
+  },
+  {
+    title: 'Club Atlético River Plate',
+    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUBHedHI_Hsu1tFck2Ab-tcvHkSK8KMIgHUzPI_JKVHO_RZgNWmRu4EQvGDHrPhKc9_v0aJHuTu7Vw2k8P6Zw7EJ-BH_A3ymul-R5RucdrZUXXMlLMmadCRDvcY2NsDCePCniEaH08SySyPBzbcYoRkqkVo7llWTqbJNFTsgGTkYjkX_dPCi_siy4d2_5yZgVgXxnD_nPM4djK3ZjlnzUrDKQuNdtbF4jS6dWk4=w1280',
+    details: 'Estadio Mâs Monumental. Revestimientos sobre Piel de Vidrio, Palcos y Bandera institucional.',
+    year: '2023/2024',
+    isLarge: true
   }
 ];
 
@@ -61,23 +56,28 @@ export default function Projects() {
           <h2 className="text-4xl md:text-5xl mb-6">Obras Destacadas</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
           {standoutProjects.map((p, i) => (
-            <motion.div
+            <motion.a
               key={i}
+              href={p.image}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group relative flex flex-col rounded-3xl bg-zinc-800/50 border border-zinc-700/50 overflow-hidden hover:bg-zinc-800 transition-all duration-500"
+              className={`group relative flex flex-col rounded-[2rem] bg-zinc-800/50 border border-zinc-700/50 overflow-hidden hover:bg-zinc-800 transition-all duration-500 cursor-pointer shadow-xl shadow-black/5 ${
+                'isLarge' in p && p.isLarge ? 'md:col-span-2 lg:col-span-3' : ''
+              }`}
             >
               {/* Image Container */}
-              <div className="aspect-video w-full bg-zinc-900 overflow-hidden relative rounded-t-[2rem]">
+              <div className="aspect-video w-full bg-zinc-900 overflow-hidden relative rounded-t-[2rem] hidden sm:block">
                 {p.image ? (
                   <img 
                     src={p.image} 
                     alt={p.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-[2rem]"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 sm:rounded-t-[2rem]"
                     referrerPolicy="no-referrer"
                   />
                 ) : (
@@ -92,15 +92,26 @@ export default function Projects() {
 
               <div className="p-8">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl md:text-2xl leading-tight group-hover:text-blue-300 transition-colors">{p.title}</h3>
-                  <ExternalLink size={18} className="text-zinc-600 group-hover:text-blue-400 transition-colors" />
+                  <div className="flex flex-col gap-1">
+                    <span className="text-blue-500 font-mono text-xs uppercase tracking-widest sm:hidden mb-2">{p.year}</span>
+                    <h3 className="text-2xl sm:text-2xl leading-tight group-hover:text-blue-300 transition-colors uppercase font-black sm:font-bold">{p.title}</h3>
+                  </div>
+                  <ExternalLink size={18} className="text-zinc-600 group-hover:text-blue-400 transition-colors mt-1 hidden sm:block" />
                 </div>
-                <p className="text-zinc-400 text-sm leading-relaxed">{p.details}</p>
+                <p className="text-zinc-400 text-sm leading-relaxed mb-6 hidden sm:block">{p.details}</p>
+                
+                {/* Mobile Button */}
+                <div className="sm:hidden mt-4">
+                  <div className="flex items-center justify-center gap-3 w-full py-5 bg-blue-600 rounded-full font-display font-black text-xs uppercase tracking-widest hover:bg-blue-500 transition-colors shadow-lg shadow-blue-900/20">
+                    Ver Imagen del Proyecto
+                    <ExternalLink size={16} />
+                  </div>
+                </div>
               </div>
               
               {/* Decorative gradient overlay */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-            </motion.div>
+              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            </motion.a>
           ))}
         </div>
 
