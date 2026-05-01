@@ -30,7 +30,7 @@ export default function About() {
       <Values />
 
       <section className="section-padding bg-blue-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center grayscale"></div>
+        <div className="absolute inset-0 opacity-10 bg-[url('https://lh3.googleusercontent.com/sitesv/AA5AbUDmGAOgXJ5NvLsMLTa1rWMCZzc21g2xBeYKdtE60LA1nBkqflmGcDf4aaBAanyeYhkQx-XmouVjzm-d0_F3ZIAjwmO0G3e78SAVb_Dw3AHsjCKbN2OUq9Zkwrv8Mlq00kbDsF2uAKEoncc9ueUE6Ws9BaFpRhRc6WBdO-MHwgDTF4QC9JpHIXhejSpDDN-QkhgTkoCMNyLjzMlVwGdqMCKrSSi2B0B8IGjLzWQ=w1280')] bg-cover bg-center grayscale"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid md:grid-cols-2 gap-16">
             <motion.div

@@ -71,12 +71,12 @@ export default function Hero() {
           
           {/* Main Visual Placeholder */}
           <div className="w-full aspect-square rounded-[4rem] overflow-hidden border border-white/5 shadow-2xl relative">
-             <img 
-               src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200" 
-               alt="Arquitectura Corporativa"
-               className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700 rounded-[4rem]"
-               referrerPolicy="no-referrer"
-             />
+              <img 
+                src="https://lh3.googleusercontent.com/sitesv/AA5AbUBhCwrz4mMVVwE4KrL4c2hplGWZUDk_J4AYxHRokR7Zb4Rz4dzwWfRujfxIFlJSTyr9lKW95szYsoleT7VouNtQrEtE9iplbQFWiAce47ZJ0nrZIolZR9TEdi3yJt1aO2FlJBw5gbF5j6wlQAR8R8bFH1ZEzc4-0Sv872YRw_A2FY7wR_Pax4pMymdQhA268Ch-JCEzoTeyIdQNEH-s8Keq8qXe8K2MoEIE=w1280" 
+                alt="Arquitectura Golam"
+                className="w-full h-full object-cover transition-all duration-700 rounded-[4rem]"
+                referrerPolicy="no-referrer"
+              />
              <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay"></div>
              <p className="absolute bottom-12 left-1/2 -translate-x-1/2 text-zinc-500 font-mono text-[10px] uppercase tracking-tighter">[ Imagen Principal de Obra ]</p>
           </div>
