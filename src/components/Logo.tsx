@@ -21,6 +21,7 @@ export default function Logo({ variant = 'dark', className = '' }: LogoProps) {
           src="https://lh3.googleusercontent.com/sitesv/AA5AbUCyKu8e7uja0_hky0gXSoasPGZVq-ZSfiyBC5FpZUkUbxgoM9fO9cn5KCXwKrgT1FWlKKxKERoBC6ryhfoFVT2FcgPQe29EFLb2C6eywgJO-g973cDdkpKjpjk18fk7-t25lWbmKsIhIMZAdo3vC0lyKahXcYWV72EKu0jflzn7C_OZx_xYsOlMmMzwbF_l62qUp9y8y6RCvJ2nbw5AB2TJjhfnr8I3CKvRgGI=w1280" 
           alt="Golam Logo" 
           className="h-full w-full object-contain transition-all duration-300 relative z-20 rounded-xl"
+          referrerPolicy="no-referrer"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.classList.add('hidden');

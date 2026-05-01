@@ -59,7 +59,7 @@ export default function ServicesPage() {
               </div>
               <div className="bg-blue-600 aspect-video rounded-2xl border border-blue-500 shadow-2xl flex items-center justify-center p-0 overflow-hidden group">
                  <img 
-                   src="https://images.unsplash.com/photo-1503387762-592dea58ef4e?auto=format&fit=crop&q=80&w=1200" 
+                   src="https://images.unsplash.com/photo-1503387762-592dea58ef4e?auto=format&fit=crop&q=80&w=1200" referrerPolicy="no-referrer" 
                    alt="Taller de Aluminio" 
                    className="w-full h-full object-cover mix-blend-overlay opacity-50 group-hover:scale-110 transition-transform duration-700"
                  />

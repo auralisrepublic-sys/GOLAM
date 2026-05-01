@@ -75,6 +75,7 @@ export default function Hero() {
                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200" 
                alt="Arquitectura Corporativa"
                className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700 rounded-[4rem]"
+               referrerPolicy="no-referrer"
              />
              <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay"></div>
              <p className="absolute bottom-12 left-1/2 -translate-x-1/2 text-zinc-500 font-mono text-[10px] uppercase tracking-tighter">[ Imagen Principal de Obra ]</p>
