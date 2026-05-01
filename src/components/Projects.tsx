@@ -4,37 +4,37 @@ import { ExternalLink, Trophy } from 'lucide-react';
 const standoutProjects = [
   {
     title: 'Aeropuertos Argentina 2000',
-    image: '/regenerated_image_1777583820216.png',
+    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUBhCwrz4mMVVwE4KrL4c2hplGWZUDk_J4AYxHRokR7Zb4Rz4dzwWfRujfxIFlJSTyr9lKW95szYsoleT7VouNtQrEtE9iplbQFWiAce47ZJ0nrZIolZR9TEdi3yJt1aO2FlJBw5gbF5j6wlQAR8R8bFH1ZEzc4-0Sv872YRw_A2FY7wR_Pax4pMymdQhA268Ch-JCEzoTeyIdQNEH-s8Keq8qXe8K2MoEIE=w1280',
     details: 'Aeroparque Jorge Newbery. Revestimiento de aluminio compuesto, cielorrasos y mangas de embarque (3200 m2).',
     year: '1999/2000'
   },
   {
     title: 'Hospital Fleni Escobar',
-    image: '/regenerated_image_1777583819319.png',
+    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUBBL6s2iuUjd3dWlGIY9ATUCxY0Y17EIGZr3QybVcpdBx4Jf7cowKrjG-Z7bD6pYxSq3xpBn0JmtKS0mrMEkxPuh5oStdXZIuweGrnOFcVtgURtd1eEOdjHhSyMiVz7mHu-LaFYal0sHODj93MonyXUY46Y6IshlHOeZP1R_3bb3sw3jpVt0kwOfy4=w1280',
     details: 'Fachadas exteriores y Marquesinas vidriadas (20.000 m2).',
     year: '2000'
   },
   {
     title: 'Hotel Sheraton Tucumán',
-    image: '/regenerated_image_1777583821443.png',
+    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUAhFnTFjfhcXpkqnrf3Xn-PO0MCwfrS5_u3aKRjnn3Y8HSE6wjL1nNagAqhl2fDtKVPGMZ7QB2fY_Vbv1H3itCxz-OKwRANqsbeY1wawSbTqrOR8w3sN-UYRXvAnVCty8PJgcSUUdZJp3EK1efoIYvCw_-dPYXaUJlTtSf0LgGMYmOW6uQavomT_tlh0xUh3VP_yz0piXvr_-LyUD0uy0HLcOmaURwsfYa7tgQ=w1280',
     details: 'Cenefas y Marquesinas Vidriadas sobre frente de acceso (1250 m2).',
     year: '2014'
   },
   {
     title: 'Santander Río Casa Matriz',
-    image: '/regenerated_image_1777583822119.png',
+    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUCEK7o7-68gea_I8PiHo9WCMmxYdEr0EaHt0UmsRiXid58eSe0ePI2LkufkdxJJ5pvv1T4YtTafQY2AYKJLGn2qgehDVvCyxgrxfypDNfGIuakUZevGBbKCgvOEzQx0vN1ki7odcqa9B09ysWvlkbGC47zLA9TvSU44Pk-jwgWgJ0jyoPt8-NlVDzDTanSchx3zmzXZC3XEmEkP6xpEBxFvEHdgVrRYDH1k2F8=w1280',
     details: 'Parque Lezama. Revestimiento de Aluminio Compuesto (3500 m2).',
     year: '2016'
   },
   {
     title: 'Club Atlético River Plate',
-    image: '/regenerated_image_1777583823283.png',
+    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUBHedHI_Hsu1tFck2Ab-tcvHkSK8KMIgHUzPI_JKVHO_RZgNWmRu4EQvGDHrPhKc9_v0aJHuTu7Vw2k8P6Zw7EJ-BH_A3ymul-R5RucdrZUXXMlLMmadCRDvcY2NsDCePCniEaH08SySyPBzbcYoRkqkVo7llWTqbJNFTsgGTkYjkX_dPCi_siy4d2_5yZgVgXxnD_nPM4djK3ZjlnzUrDKQuNdtbF4jS6dWk4=w1280',
     details: 'Revestimientos sobre Piel de Vidrio, Palcos y Bandera institucional.',
     year: 'Proceso/Finalizado'
   },
   {
     title: 'L’Avenue (Zaha Hadid)',
-    image: '/regenerated_image_1777583824096.png',
+    image: 'https://lh3.googleusercontent.com/sitesv/AA5AbUDmGAOgXJ5NvLsMLTa1rWMCZzc21g2xBeYKdtE60LA1nBkqflmGcDf4aaBAanyeYhkQx-XmouVjzm-d0_F3ZIAjwmO0G3e78SAVb_Dw3AHsjCKbN2OUq9Zkwrv8Mlq00kbDsF2uAKEoncc9ueUE6Ws9BaFpRhRc6WBdO-MHwgDTF4QC9JpHIXhejSpDDN-QkhgTkoCMNyLjzMlVwGdqMCKrSSi2B0B8IGjLzWQ=w1280',
     details: 'Revestimientos sobre fachada y terminaciones de terrazas.',
     year: 'Finalizado'
   }
@@ -72,12 +72,12 @@ export default function Projects() {
               className="group relative flex flex-col rounded-3xl bg-zinc-800/50 border border-zinc-700/50 overflow-hidden hover:bg-zinc-800 transition-all duration-500"
             >
               {/* Image Container */}
-              <div className="aspect-video w-full bg-zinc-900 overflow-hidden relative">
+              <div className="aspect-video w-full bg-zinc-900 overflow-hidden relative rounded-t-[2rem]">
                 {p.image ? (
                   <img 
                     src={p.image} 
                     alt={p.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-[2rem]"
                     referrerPolicy="no-referrer"
                   />
                 ) : (

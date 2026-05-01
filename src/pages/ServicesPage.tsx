@@ -22,7 +22,7 @@ export default function ServicesPage() {
               </div>
               <span className="text-xs uppercase font-black tracking-[0.3em]">Nuestras Capacidades</span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-display mb-8 tracking-tighter">Servicios <br /><span className="text-blue-100/50">Especializados</span></h1>
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-display mb-8 tracking-tighter">Servicios <br /><span className="text-blue-100/50">Especializados</span></h1>
             <p className="text-blue-50 text-xl max-w-2xl leading-relaxed font-light">
               Desde la fabricación propia hasta el montaje en obra en todo el país, cubrimos cada etapa con precisión milimétrica.
             </p>
@@ -39,7 +39,7 @@ export default function ServicesPage() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
         </div>
         <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-zinc-900 rounded-[3rem] p-12 md:p-20 text-white overflow-hidden relative">
+          <div className="bg-zinc-900 rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-12 md:p-20 text-white overflow-hidden relative">
             <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-4xl mb-8">Ventajas Competitivas</h2>

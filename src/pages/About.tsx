@@ -16,7 +16,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <h1 className="text-6xl md:text-8xl font-display mb-8 tracking-tighter">Sobre <span className="text-blue-400">Nosotros</span></h1>
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-display mb-8 tracking-tighter">Sobre <span className="text-blue-400">Nosotros</span></h1>
             <p className="text-blue-100 text-xl max-w-2xl leading-relaxed font-light">
               Lideramos la industria de los revestimientos en Argentina mediante una fusión impecable de <span className="font-bold text-white uppercase text-sm tracking-widest bg-blue-800 px-2 py-1 rounded">Ingeniería</span> y <span className="font-bold text-white uppercase text-sm tracking-widest bg-blue-800 px-2 py-1 rounded">Arquitectura</span>.
             </p>
@@ -38,7 +38,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl mb-8 border-l-4 border-blue-600 pl-4 font-display font-bold text-blue-900">Personal Capacitado</h2>
+              <h2 className="text-3xl mb-8 border-l-4 border-blue-600 pl-4 font-display font-bold text-white">Personal Capacitado</h2>
               <div className="space-y-6">
                 <div className="p-6 bg-blue-800/50 backdrop-blur-sm rounded-2xl border border-blue-700 shadow-sm flex gap-4 hover:border-blue-400 transition-colors">
                   <UserCheck className="text-blue-300 shrink-0" size={24} />
@@ -62,7 +62,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl mb-8 border-l-4 border-blue-600 pl-4 font-display font-bold text-blue-900">Referentes Comerciales</h2>
+              <h2 className="text-3xl mb-8 border-l-4 border-blue-600 pl-4 font-display font-bold text-white">Referentes Comerciales</h2>
               <ul className="space-y-3">
                 {[
                   { name: 'Dicky SACIFICA', lead: 'Ing. Máximo Aldunate', tel: '4641.6073' },

@@ -22,8 +22,8 @@ export default function Hero() {
             Líderes en el Mercado Nacional
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-display text-white mb-6 leading-[0.9] tracking-tight">
-            GOLAM <br /> <span className="text-zinc-500 text-5xl md:text-7xl">REVESTIMIENTOS</span>
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-display text-white mb-6 leading-[0.9] tracking-tight">
+            GOLAM <br /> <span className="text-3xl sm:text-5xl md:text-7xl text-zinc-500">REVESTIMIENTOS</span>
           </h1>
           
           <p className="text-zinc-400 text-xl mb-10 max-w-lg leading-relaxed">
@@ -74,16 +74,16 @@ export default function Hero() {
              <img 
                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200" 
                alt="Arquitectura Corporativa"
-               className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+               className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700 rounded-[4rem]"
              />
              <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay"></div>
              <p className="absolute bottom-12 left-1/2 -translate-x-1/2 text-zinc-500 font-mono text-[10px] uppercase tracking-tighter">[ Imagen Principal de Obra ]</p>
           </div>
 
           {/* Floating info card */}
-          <div className="absolute -bottom-6 -left-6 p-6 glass-card rounded-2xl bg-white text-zinc-900 z-20 shadow-2xl">
+          <div className="absolute -bottom-6 -left-6 p-6 glass-card rounded-[2rem] bg-white text-zinc-900 z-20 shadow-2xl">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-[1.25rem] bg-orange-100 text-orange-600 flex items-center justify-center">
                 <HardHat size={24} />
               </div>
               <div>
