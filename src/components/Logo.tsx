@@ -12,7 +12,7 @@ export default function Logo({ className = '' }: LogoProps) {
     <div className={`flex items-center ${className}`}>
       <div className="relative flex items-center">
         <img 
-          src="https://lh3.googleusercontent.com/sitesv/AA5AbUBNAD93iXKV1XJxyxjGAHV3NoCtmoI4qU9gK1OjJR2VvupLeacaE7fIeKfYXckqFXqMaJpnZvD4smWBapCJM5VXYWQL4Fn3jvMAEK9Pug1a415SH3rW-k4Z2i8BLuQU_lqWKpKdL7ePCnExEURBBHkH5buJwf_njlgE8grN17ASoL8Lpypy5aa81qHyRqLwFOYgBFQ2gpkXSAXZ-qdyrTNRavjhItkdFZVYmgk=w1280" 
+          src="https://plain-enam-prod-public.komododecks.com/202605/02/wlNYeRGz6Ew3cASJl8ba/image.png" 
           alt="Golam" 
           className="h-[50px] sm:h-[60px] w-auto block object-contain"
           referrerPolicy="no-referrer"
